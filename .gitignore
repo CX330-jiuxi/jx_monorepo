@@ -1,0 +1,6 @@
+# 包
+node_modules
+yarn.lock
+
+# IDE
+.idea
