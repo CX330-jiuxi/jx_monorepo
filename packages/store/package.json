@@ -1,0 +1,29 @@
+{
+  "name": "@pangu/store",
+  "version": "1.0.0",
+  "keywords": [
+    "store",
+    "frontend"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "father-build",
+    "build:analyze": "ANALYZE=1 father-build"
+  },
+  "devDependencies": {
+    "@pangu/tools": "workspace:^1.0.0",
+    "@types/react": "^17.0.37",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "father-build": "^1.20.4",
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  }
+}

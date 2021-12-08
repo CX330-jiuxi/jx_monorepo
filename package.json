@@ -1,5 +1,32 @@
 {
+	"name": "pangu",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"start": "dumi dev",
+		"build:docs": "dumi build",
+		"build:pkg": "pnpm build --filter @pangu/*",
+		"preinstall": "npx only-allow pnpm",
+		"prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""
+	},
+	"gitHooks": {
+		"pre-commit": "lint-staged"
+	},
+	"lint-staged": {
+		"*.{js,jsx,less,md,json}": [
+			"prettier --write"
+		],
+		"*.dts?(x)": [
+			"prettier --parser=typescript --write"
+		]
+	},
 	"devDependencies": {
-		"@changesets/cli": "^2.18.1"
+		"@changesets/cli": "^2.18.1",
+		"@pangu/store": "workspace:^1.0.0",
+		"babel-plugin-import": "^1.13.3",
+		"dumi": "^1.1.33",
+		"lint-staged": "^12.1.2",
+		"prettier": "^2.5.1",
+		"react": "^17.0.2"
 	}
 }
