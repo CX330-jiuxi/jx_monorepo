@@ -5,6 +5,8 @@
 	"scripts": {
 		"start": "dumi dev",
 		"build:docs": "dumi build",
+		"dev:base": "pnpm dev --filter base",
+		"build:base": "pnpm build --filter base",
 		"build:pkg": "pnpm build --filter @pangu/*",
 		"preinstall": "npx only-allow pnpm",
 		"prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""

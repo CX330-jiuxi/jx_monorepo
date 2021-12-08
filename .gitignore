@@ -12,3 +12,5 @@ dist
 
 # pnpm
 pnpm-lock.yaml
+
+.DS_Store
