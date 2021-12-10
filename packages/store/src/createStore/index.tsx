@@ -1,5 +1,5 @@
 import { FC, createContext, useContext, useLayoutEffect, useReducer, useRef } from 'react';
-import { equalComplex } from '@pangu/tools/src';
+import { equalComplex } from '@jx/tools/src';
 
 export type TUseHooks<Store, State = void> = (initialState?: State) => Store;
 

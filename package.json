@@ -7,7 +7,8 @@
 		"build:docs": "dumi build",
 		"dev:base": "pnpm dev --filter base",
 		"build:base": "pnpm build --filter base",
-		"build:pkg": "pnpm build --filter @pangu/*",
+		"dev:pkg_rc": "pnpm dev --filter @jx/rc",
+		"build:pkg": "pnpm build --filter @jx/*",
 		"preinstall": "npx only-allow pnpm",
 		"prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""
 	},
@@ -24,7 +25,8 @@
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.18.1",
-		"@pangu/store": "workspace:^1.0.0",
+		"@jx/store": "workspace:*",
+		"@jx/tools": "workspace:*",
 		"babel-plugin-import": "^1.13.3",
 		"dumi": "^1.1.33",
 		"lint-staged": "^12.1.2",

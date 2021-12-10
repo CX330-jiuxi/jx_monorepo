@@ -1,6 +1,6 @@
 {
-  "name": "@pangu/store",
-  "version": "1.0.0",
+  "name": "@jx/store",
+  "version": "0.0.0",
   "keywords": [
     "store",
     "frontend"
@@ -17,7 +17,7 @@
     "build:analyze": "ANALYZE=1 father-build"
   },
   "devDependencies": {
-    "@pangu/tools": "workspace:^1.0.0",
+    "@jx/tools": "workspace:^0.0.0",
     "@types/react": "^17.0.37",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "father-build": "^1.20.4",

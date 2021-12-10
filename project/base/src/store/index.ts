@@ -1,4 +1,4 @@
-import { createStore } from '@pangu/store/src';
+import { createStore } from '@jx/store/src';
 import useUserInfo, { IUserInfo, IUseUserInfoReturn } from './useUserInfo';
 
 interface IRootInitSate {
